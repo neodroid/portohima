@@ -9,8 +9,8 @@ const HomeBanner = () => {
             <HomeContent>
                 <IntroPart>
                     <Intro>HELLO! MY NAME IS</Intro>
-                    <Intro big normal>Himawan Nurcahyanto</Intro>
-                    <Intro normal jobs>Artificial Intelligence <br />Engineer</Intro>
+                    <Intro big normal >Himawan Nurcahyanto</Intro>
+                    <Intro normal jobs >Artificial Intelligence <br />Engineer</Intro>
                     <Homebtn>Download Resume</Homebtn>
                 </IntroPart>
                 <ImgPart>

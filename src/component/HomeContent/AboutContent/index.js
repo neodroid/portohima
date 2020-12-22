@@ -29,7 +29,7 @@ const mail = AboutData.mail;
 const AboutContent = () => {
     return(
         <GlobalContent>
-            <TitleHomeContent about>About Me</TitleHomeContent>
+            <TitleHomeContent about >About Me</TitleHomeContent>
             <AboutWrapper>
             <GridAbout about>
                 <AboutWriteContent about>{abt}</AboutWriteContent>
@@ -39,7 +39,7 @@ const AboutContent = () => {
             </HimaAbout>
             <GridAbout>
             <TitleHomeContent>Reach Me</TitleHomeContent>
-            <ContactIcon phone>
+            <ContactIcon phone >
                 <FaPhone />
                 <AboutWriteContent>{phone}</AboutWriteContent>
             </ContactIcon>
