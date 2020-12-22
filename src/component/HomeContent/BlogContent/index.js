@@ -11,7 +11,7 @@ import {
 } from "./style"
 import Train from "../../../images/Train.png";
 
-const ManageBlogData = ({ image, title,description }) => {
+const ManageBlogData = ({ title,description }) => {
     return (
       <BlogBox>
           <BlogImage src = {Train} />
@@ -38,7 +38,6 @@ const BlogContent = () => {
             </BlogContainer>
         </GlobalContent>
     );
-    console.log(Train);
 };
 
 export default BlogContent;
