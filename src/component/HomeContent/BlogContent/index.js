@@ -15,7 +15,7 @@ const ManageBlogData = ({ title, description }) => {
     return (
       <BlogBox>
           <BlogImage src = {Train} />
-          <BoxContainer title>{title}</BoxContainer>
+          <BoxContainer titlee >{title}</BoxContainer>
           <BoxContainer>{description}</BoxContainer>
           <Blogbtn>Continue Reading</Blogbtn>
       </BlogBox>

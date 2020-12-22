@@ -1,6 +1,6 @@
 import React from "react";
-import {GlobalContent} from "../../GlobalContent";
-import {TitleHomeContent} from "../style"
+import { GlobalContent } from "../../GlobalContent";
+import { TitleHomeContent } from "../style"
 
 const YouTubeContent = () => {
     return(

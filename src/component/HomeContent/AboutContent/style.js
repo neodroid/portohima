@@ -23,7 +23,7 @@ export const HimaAbout = styled.div`
 `;
 
 export const GridAbout = styled.div`
-    grid-area: ${(props) => props.about ? "1/1" : "2/1" };
+    grid-area: ${(props) => props.gridAbout ? 1/1 : 2/1 };
 `;
 
 export const SocialIcons = styled.div`

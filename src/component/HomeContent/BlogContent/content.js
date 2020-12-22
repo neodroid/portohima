@@ -1,7 +1,3 @@
-import Paper from '../../../images/Paper.png';
-import Alumni from "../../../images/Alumni.png";
-import Train from "../../../images/Train.png";
-
 export const BlogData = [
     {
         title: 'Korea Train Transportation System, How It Works And Tips!',

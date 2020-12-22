@@ -31,8 +31,8 @@ const AboutContent = () => {
         <GlobalContent>
             <TitleHomeContent about >About Me</TitleHomeContent>
             <AboutWrapper>
-            <GridAbout about>
-                <AboutWriteContent about>{abt}</AboutWriteContent>
+            <GridAbout gridAbout >
+                <AboutWriteContent about >{abt}</AboutWriteContent>
             </GridAbout>
             <HimaAbout>
                 <img src = {AboutHima} alt="Hima" />

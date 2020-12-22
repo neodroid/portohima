@@ -12,7 +12,7 @@ export const IntroPart = styled.div`
 `;
 
 export const Intro = styled.p`
-    font-weight: ${props => props.big ? "bold" : "500"};
+    font-weight: ${props => props.big ? 'bold' : 500};
     font-size: ${props => props.big ? "30px" : "14px"};
     line-height: ${props => props.big ? "45px" : "21px"};
     letter-spacing: ${props => props.normal ? "0.07em" : "0.54em"};
