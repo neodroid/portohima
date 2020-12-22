@@ -25,9 +25,9 @@ export const BlogContainer = styled.div`
 `;
 
 export const BoxContainer = styled.p`
-    font-weight: ${props => props.title ? "bold" : "normal"};
-    font-size: ${props => props.title ? "14px" : "12px"};
-    line-height: ${props => props.title ? "28px" : "20px"};
+    font-weight: ${(props) => (props.title ? "bold" : "normal") };
+    font-size: ${(props) => (props.title ? "14px" : "12px") };
+    line-height: ${(props) => (props.title ? "28px" : "20px") };
     margin: 2px 11px 0 15px;
     overflow: hidden;
 `;

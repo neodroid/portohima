@@ -11,7 +11,7 @@ import {
 } from "./style"
 import Train from "../../../images/Train.png";
 
-const ManageBlogData = ({ title,description }) => {
+const ManageBlogData = ({ title, description }) => {
     return (
       <BlogBox>
           <BlogImage src = {Train} />
@@ -30,11 +30,10 @@ const BlogContent = () => {
             {BlogData.map((data, idx) => (
               <ManageBlogData
                 key={idx}
-                image= {data.image}
                 title={data.title}
                 description={data.description}
               />
-            ))}
+            ))};
             </BlogContainer>
         </GlobalContent>
     );

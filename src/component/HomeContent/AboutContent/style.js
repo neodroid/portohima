@@ -6,11 +6,11 @@ export const AboutWrapper = styled.div`
 `;
 
 export const AboutWriteContent = styled.p`
-    font-weight: ${props => props.about ? "500" : "normal"};
+    font-weight: ${(props) => (props.about ? "500" : "normal") };
     font-size: 12px;
-    line-height: ${props => props.about ? "18px" : "15px"};
-    letter-spacing: ${props => props.about ? "0.1em" : "0"};
-    align-self: ${props => props.about ? "none" : "center"};
+    line-height: ${(props) => (props.about ? "18px" : "15px") };
+    letter-spacing: ${(props) => (props.about ? "0.1em" : "0") };
+    align-self: ${(props) => (props.about ? "none" : "center") };
     color: black;
 `;
 
@@ -23,7 +23,7 @@ export const HimaAbout = styled.div`
 `;
 
 export const GridAbout = styled.div`
-    grid-area: ${props => props.about ? "1/1" : "2/1"};
+    grid-area: ${(props) => props.about ? "1/1" : "2/1" };
 `;
 
 export const SocialIcons = styled.div`
