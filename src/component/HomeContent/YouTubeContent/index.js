@@ -5,7 +5,7 @@ import YouTube from "react-youtube";
 import {YTContainer, YTProfile, YTName, YTPict, Visit, YTPictPart} from "./style";
 import { BsFillCaretRightFill } from "react-icons/bs";
 
-const API = 'AIzaSyDnbbJ7KEvlwMEgNpPoAqoqygztWJ7e2ao';
+const API = process.env.API_KEY;
 const channelID = 'UCK_2UEc-JfIKDtWEy1_IK9g';
 var profileURL = `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=${channelID}&key=${API}`;
 var videoURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelID}&maxResults=1&order=date&part=snippet`;
@@ -14,6 +14,8 @@ const YouTubeContent = () => {
     const [pict, setPict] = useState();
     const [name, setName] = useState();
     const [videos, setVideo] = useState();
+
+    require('dotenv').config();
 
     fetch(profileURL)
         .then((response) => response.json())
