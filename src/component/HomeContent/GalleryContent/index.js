@@ -3,7 +3,7 @@ import {GlobalContent} from "../../GlobalContent";
 import { TitleHomeContent} from "../style";
 import Land from "../../../images/Land.png";
 import {GalleryData} from "./content";
-import { BsFillCaretLeftFill } from "react-icons/bs";
+import { BsFillCaretRightFill } from "react-icons/bs";
 import {
     GalleryContainer,
     GalleryImage
@@ -19,7 +19,7 @@ const GalleryContent = () => {
     return(
         <GlobalContent>
             <TitleHomeContent recent>Recent Gallery</TitleHomeContent>
-            <TitleHomeContent view recent>View All <BsFillCaretLeftFill /></TitleHomeContent>
+            <TitleHomeContent view recent><BsFillCaretRightFill target="_blank"/>View All</TitleHomeContent>
             <GalleryContainer>
                 {GalleryData.map((data, idx) => (
                 <ManageGalleryData

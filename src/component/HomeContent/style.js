@@ -10,6 +10,5 @@ export const TitleHomeContent = styled.div`
     margin-bottom: ${props => props.about ? "15px" : "22px"};
     display: ${props => props.recent ? "inline-flex" : "block"};
     cursor: ${props => props.view ? "pointer" : "auto"};
-    align-item: ${props => props.view ? "right" : "left"};
     flex-direction: ${props => props.view ? "row-reverse" : "none"};
 `;

@@ -32,7 +32,7 @@ const AboutContent = () => {
             <TitleHomeContent about >About Me</TitleHomeContent>
             <AboutWrapper>
             <GridAbout gridAbout >
-                <AboutWriteContent about >{abt}</AboutWriteContent>
+                <AboutWriteContent about > {abt} </AboutWriteContent>
             </GridAbout>
             <HimaAbout>
                 <img src = {AboutHima} alt="Hima" />
@@ -41,11 +41,11 @@ const AboutContent = () => {
             <TitleHomeContent>Reach Me</TitleHomeContent>
             <ContactIcon phone >
                 <FaPhone />
-                <AboutWriteContent>{phone}</AboutWriteContent>
+                <AboutWriteContent> {phone} </AboutWriteContent>
             </ContactIcon>
             <ContactIcon>
                 <FaEnvelope />
-                <AboutWriteContent>{mail}</AboutWriteContent>
+                <AboutWriteContent> {mail} </AboutWriteContent>
             </ContactIcon>
             <SocialIcons>
               <SocialIconLink
