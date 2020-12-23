@@ -10,7 +10,7 @@ export const Nav = styled.nav`
     background: #fff;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     display: block;
-    z-index: 10;
+    z-index: 1000;
 `;
 
 export const NavBarContainer = styled.div`

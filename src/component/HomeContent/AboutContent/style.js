@@ -44,5 +44,5 @@ export const ContactIcon = styled.div`
     display: flex;
     margin-bottom: 25px;
     width: ${props => props.phone ? "135px" : "240px"};
-    justify-content:space-between;
+    justify-content: space-between;
 `;

@@ -1,7 +1,8 @@
 import React from "react";
 import {GlobalContent} from "../../GlobalContent";
 import {BlogData} from "./content";
-import {TitleHomeContent} from "../style";
+import { TitleHomeContent} from "../style";
+import { BsFillCaretLeftFill } from "react-icons/bs";
 import {
     BlogBox,
     BlogContainer,
@@ -25,7 +26,8 @@ const ManageBlogData = ({ title, description }) => {
 const BlogContent = () => {
     return(
         <GlobalContent>
-            <TitleHomeContent>Recent Blog</TitleHomeContent>
+            <TitleHomeContent recent>Recent Blog</TitleHomeContent>
+            <TitleHomeContent view recent>View All<BsFillCaretLeftFill /> </TitleHomeContent>
             <BlogContainer>
             {BlogData.map((data, idx) => (
               <ManageBlogData
@@ -33,7 +35,7 @@ const BlogContent = () => {
                 title={data.title}
                 description={data.description}
               />
-            ))};
+            ))}
             </BlogContainer>
         </GlobalContent>
     );

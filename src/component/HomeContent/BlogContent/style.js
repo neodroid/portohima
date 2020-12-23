@@ -5,10 +5,9 @@ export const BlogBox = styled.div`
     height: 464px;
     box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    transition-duration: 0.5s;
     &:hover {
-        transition: all 0.2s ease-in-out;
-        transform:scale(1.05);
+        transition: 0.2s ease-in-out;
+        transform: scale(1.05);
         }
 `;
 
@@ -28,20 +27,23 @@ export const BoxContainer = styled.p`
     font-weight: ${(props) => (props.titlee ? "bold" : "normal") };
     font-size: ${(props) => (props.titlee ? "14px" : "12px") };
     line-height: ${(props) => (props.titlee ? "28px" : "20px") };
-    margin: 2px 11px 0 15px;
+    margin: 2px 11px 0 16px;
     overflow: hidden;
 `;
 
 export const BlogImage = styled.img`
     z-index: 3;
     width: 214px;
-    margin: 15px 15px 0 15px;
+    margin: 15px 15px 0 18px;
     align-item:center;
 `;
 
 export const Blogbtn = styled.button`
+    position:inherit;
+    top: 85%;
+    z-index: 20;
+    margin: 2px 15px 0 18px;
     border-radius: 5px;
-    margin: 5px 15px 0 18px;
     background: #1054D9;
     padding: 8px 32px;
     color: #fff;
@@ -51,7 +53,7 @@ export const Blogbtn = styled.button`
     cursor: pointer;
     text-decoration: none;
     &:hover {
-        transition: 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
         opacity: 50%;
     }
 `;
