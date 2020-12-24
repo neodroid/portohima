@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 export const TitleHomeContent = styled.div`
     width: ${props => props.recent ? "50%" : "100%"};
@@ -11,4 +12,10 @@ export const TitleHomeContent = styled.div`
     display: ${props => props.recent ? "inline-flex" : "block"};
     cursor: ${props => props.view ? "pointer" : "auto"};
     flex-direction: ${props => props.view ? "row-reverse" : "none"};
+`;
+
+export const Viewedin = styled(LinkR)`
+    font-weight: normal;
+    text-decoration: none;
+    color: #5A5A5A;
 `;
