@@ -5,8 +5,9 @@ import YouTube from "react-youtube";
 import {YTContainer, YTProfile, YTName, YTPict, Visit, YTPictPart} from "./style";
 import { BsFillCaretRightFill } from "react-icons/bs";
 
-const API = 'AIzaSyDnbbJ7KEvlwMEgNpPoAqoqygztWJ7e2ao';
-const channelID = 'UCK_2UEc-JfIKDtWEy1_IK9g';
+console.log(process.env);
+const API = process.env.REACT_APP_YT_API_KEY;
+const channelID = process.env.REACT_APP_YT_CHANNEL_ID;
 var profileURL = `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=${channelID}&key=${API}`;
 var videoURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelID}&maxResults=1&order=date&part=snippet`;
 
@@ -28,8 +29,7 @@ const YouTubeContent = () => {
         setPict(PP);
         })
         .catch((error) => {
-        var err = error.message;
-        console.error(err);
+            return(error)
         });
 
     fetch(videoURL)
@@ -40,7 +40,7 @@ const YouTubeContent = () => {
         setVideo(LV);
         })
         .catch((error) => {
-        console.error(error)
+            return(error)
         });
 
     const YTContent = ({Pict, Name, Video}) => {
