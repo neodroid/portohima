@@ -1,18 +1,26 @@
-import Navbar from "./component/Navbar"
-import Footer from "./component/Foot"
-import HomeContent from "./component/HomeContent"
+import React, { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./component/Navbar";
+import Home from "./pages";
+import Footer from "./component/Foot";
 import "./App.css";
-import React from "react";
-import HomeBanner from "./component/HomeBanner"
+import ScrollToTop from "./component/ScrollToTop";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <div>
+    <Router>
       <Navbar />
-      <HomeBanner />
-      <HomeContent />
+      <ScrollToTop />
+      <Switch>
+        <Route path="/" component={Home} exact />
+      </Switch>
       <Footer />
-    </div>
+    </Router>
   );
 }
 

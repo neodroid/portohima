@@ -18,8 +18,9 @@ export const NavBarContainer = styled.div`
     height: 100%;
 `;
 
-export const NavLogoPart = styled.div`
+export const NavLogoPart = styled(LinkR)`
     flex-basis: 25%;
+    text-decoration: none;
     align-items: center;
     text-align: center;
     margin-top: 10px;
@@ -39,9 +40,10 @@ export const NavListPart = styled.div`
     margin: 0 auto;
 `;
 
-export const NavList = styled.p`
+export const NavList = styled(LinkR)`
     display: inline-block;
     margin: 30px;
+    text-decoration: none;
     color: black;
     cursor: pointer;
     font-size: 16px;

@@ -5,7 +5,7 @@ import YouTube from "react-youtube";
 import {YTContainer, YTProfile, YTName, YTPict, Visit, YTPictPart} from "./style";
 import { BsFillCaretRightFill } from "react-icons/bs";
 
-const API = process.env.API_KEY;
+const API = 'AIzaSyDnbbJ7KEvlwMEgNpPoAqoqygztWJ7e2ao';
 const channelID = 'UCK_2UEc-JfIKDtWEy1_IK9g';
 var profileURL = `https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=${channelID}&key=${API}`;
 var videoURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelId=${channelID}&maxResults=1&order=date&part=snippet`;
@@ -13,30 +13,23 @@ var videoURL = `https://www.googleapis.com/youtube/v3/search?key=${API}&channelI
 const YouTubeContent = () => {
     const [pict, setPict] = useState();
     const [name, setName] = useState();
-    const [videos, setVideo] = useState();
+    const [video, setVideo] = useState();
 
     require('dotenv').config();
-
+    
     fetch(profileURL)
         .then((response) => response.json())
         .then((responseJson) => {
         var ProfilePict = responseJson.items.map(obj => obj.snippet.thumbnails.medium.url);
         const PP = ProfilePict[0];
-        setPict(PP);
-        })
-        .catch((error) => {
-        console.error(error);
-        });
-
-    fetch(profileURL)
-        .then((response) => response.json())
-        .then((responseJson) => {
         var ProfileName = responseJson.items.map(obj => obj.snippet.title);
         const PN = ProfileName[0];
         setName(PN);
+        setPict(PP);
         })
         .catch((error) => {
-        console.error(error);
+        var err = error.message;
+        console.error(err);
         });
 
     fetch(videoURL)
@@ -47,7 +40,7 @@ const YouTubeContent = () => {
         setVideo(LV);
         })
         .catch((error) => {
-        console.error(error);
+        console.error(error)
         });
 
     const YTContent = ({Pict, Name, Video}) => {
@@ -70,7 +63,7 @@ const YouTubeContent = () => {
         <GlobalContent>
             <TitleHomeContent>Youtube Video</TitleHomeContent>
             <YTContainer>
-                <YTContent Video = {videos} Pict = {pict} Name = {name} />
+                <YTContent Video = {video} Pict = {pict} Name = {name} />
                 <YTContainer>
                 <Visit href = "https://www.youtube.com/channel/UCK_2UEc-JfIKDtWEy1_IK9g/videos">Visit YouTube Channel <BsFillCaretRightFill target="_blank"/></Visit>
                 </YTContainer>

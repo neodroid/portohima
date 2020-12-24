@@ -15,15 +15,15 @@ const Navbar = () => {
     return (
         <Nav>
             <NavBarContainer>
-                <NavLogoPart>
+                <NavLogoPart to = "/">
                     <NavLogo src = {HNLogo} />
                 </NavLogoPart>
                 <NavListPart>
-                    <NavList>Home</NavList>
-                    <NavList>Experience</NavList>
-                    <NavList>Achievement</NavList>
-                    <NavList>Blog</NavList>
-                    <NavList>Gallery</NavList>
+                    <NavList to = "/">Home</NavList>
+                    <NavList to = "/experience" >Experience</NavList>
+                    <NavList to = "/achievement" >Achievement</NavList>
+                    <NavList to = "/blog" >Blog</NavList>
+                    <NavList to = "/gallery ">Gallery</NavList>
                 </NavListPart>
                 <NavButtonPart>
                     <Navbtn>Contact</Navbtn>

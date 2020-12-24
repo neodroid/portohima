@@ -23,7 +23,7 @@ export const HimaAbout = styled.div`
 `;
 
 export const GridAbout = styled.div`
-    grid-area: ${(props) => props.gridAbout ? 1/1 : 2/1 };
+    grid-area: ${(props) => (props.gridAbout ? 1/1 : 2/1) };
 `;
 
 export const SocialIcons = styled.div`
@@ -43,6 +43,6 @@ export const ContactIcon = styled.div`
     font-size: 24px;
     display: flex;
     margin-bottom: 25px;
-    width: ${props => props.phone ? "135px" : "240px"};
+    width: ${(props) => (props.phone ? "135px" : "240px") };
     justify-content: space-between;
 `;
